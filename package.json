@@ -1,0 +1,28 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Todo app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js --exit",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "author": "Raymond Johannessen",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "mongodb": "^3.1.0",
+    "mongoose": "^5.1.8",
+    "validator": "^10.4.0"
+  },
+  "devDependencies": {
+    "expect": "^23.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  }
+}
